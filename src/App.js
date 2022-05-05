@@ -7,11 +7,11 @@ function App() {
     <div className="counter">
       <h1>{count}</h1>
       <div>
-          <button className="" onClick={(e)=> setCount(count-5) }>-5</button>
-          <button className="m-l-10" onClick={(e)=> setCount(count-1) }>-</button>
+          <button className="" onClick={(e)=> setCount(count=> count-5) }>-5</button>
+          <button className="m-l-10" onClick={(e)=> setCount(count=> count-1) }>-</button>
           <button className="m-l-10" onClick={(e)=> setCount(0) }>Reset</button>
-          <button className="m-l-10" onClick={(e)=> setCount(count+1) }>+</button>
-          <button className="m-l-10" onClick={(e)=> setCount(count+5) }>+5</button>
+          <button className="m-l-10" onClick={(e)=> setCount(count=> count+1) }>+</button>
+          <button className="m-l-10" onClick={(e)=> setCount(count=> count+5) }>+5</button>
       </div>
     </div>
   );
